@@ -5,7 +5,7 @@ from switches import VirtualSwitch1CH,  VirtualSwitch2CH, VirtualSwitch4CH
 from occupancy_sensor import VirtualOccupancySensor
 from webthing import (WebThingServer, MultipleThings)
 
-print("This is the Main Application, which when ran will ask you to tell no. of devices to be created i.e. switches, energy-meters, occupancy-meters");
+print("This is the Main Application, which will create 1 virtual device of each Switch-1CH, Switch-2CH, Switch-4CH, Energy-Meter, Occupancy-Sensor\n");
 
 def run_virtual_devices():
     switch_1ch = VirtualSwitch1CH(1)
