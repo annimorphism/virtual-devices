@@ -18,7 +18,7 @@ def run_virtual_devices():
 
     things = [switch_1ch, switch_2ch, switch_4ch, energy_meter, occupancy_sensor]
 
-    server = WebThingServer(MultipleThings(things,'virtual-devices'), port=8888)
+    server = WebThingServer(MultipleThings(things,'virtual-devices'), hostname='0.0.0.0', port=5000)
 
     try:
         print("starting the Virtual Device server")
