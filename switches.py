@@ -10,9 +10,11 @@ class SwitchAction(Action):
         Action.__init__(self, uuid.uuid4().hex, thing, 'on-off', input_)
 
     def perform_action(self):
-        print(f"Performing action on the device: {self.thing.id} on the property: {self.input['property']} with input: {self.input['switch_state']}")
-        property_id = self.input['property']
+        print(f"Performing action on the device: {self.thing.id} on the property: {self.input['propertyId']} with input: {self.input['switch_state']}")
+        property_id = self.input['propertyId']
         self.thing.set_property(property_id, self.input['switch_state'])
+
+        # self.thing.notify_of_external_update(property_id)
 
 
 class VirtualSwitch1CH(Thing):
@@ -50,9 +52,9 @@ class VirtualSwitch1CH(Thing):
                 'description': "Turns the switch on or off",
                 'input': {
                     'type': 'object',
-                    'required': ['property', 'switch_state'],
+                    'required': ['propertyId', 'switch_state'],
                     'properties': {
-                        'property': {
+                        'propertyId': {
                             'type': 'string',
                         },
                         'switch_state': {
@@ -121,9 +123,9 @@ class VirtualSwitch2CH(Thing):
                 'description': "Turns the switch on or off",
                 'input': {
                     'type': 'object',
-                    'required': ['property', 'switch_state'],
+                    'required': ['propertyId', 'switch_state'],
                     'properties': {
-                        'property': {
+                        'propertyId': {
                             'type': 'string',
                         },
                         'switch_state': {
@@ -219,9 +221,9 @@ class VirtualSwitch4CH(Thing):
                 'description': "Turns the switch on or off",
                 'input': {
                     'type': 'object',
-                    'required': ['property', 'switch_state'],
+                    'required': ['propertyId', 'switch_state'],
                     'properties': {
-                        'property': {
+                        'propertyId': {
                             'type': 'string',
                         },
                         'switch_state': {

@@ -1,5 +1,3 @@
-from http import server
-from tkinter import W
 from energy_meter import VirtualEnergyMeter
 from switches import VirtualSwitch1CH,  VirtualSwitch2CH, VirtualSwitch4CH
 from occupancy_sensor import VirtualOccupancySensor
