@@ -10,7 +10,7 @@ class VirtualOccupancySensor(Thing):
 
         Thing.__init__(
             self,
-            f'SE-Virtual-{id}',
+            f'SE-virtual-{id}',
             'Virtual Occupancy Sensor',
             ['OccupancySensor', 'OccupancySensorProperty', 'OccupancyProperty'],
             'A Qube Virtual Occupancy Sensor',

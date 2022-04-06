@@ -22,7 +22,7 @@ class VirtualEnergyMeter(Thing):
 
         Thing.__init__(
             self,
-            f'SU-Virtual-{id}',
+            f'SU-virtual-{id}',
             'Virtual Energy Meter',
             ['EnergyMonitor', 'EnergyMeterProperty', 'OnOffProperty', 'PowerProperty'],
             'A Qube Virtual Energy Meter',

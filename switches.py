@@ -23,7 +23,7 @@ class VirtualSwitch1CH(Thing):
 
         Thing.__init__(
             self,
-            f'SW-1CH-Virtual-{id}',
+            f'SW-1CH-virtual-{id}',
             'Virtual 1CH Switch',
             ['OnOffProperty', 'OnOffSwitch'],
             'A Qube Virtual 1 Channel Switch',
@@ -79,7 +79,7 @@ class VirtualSwitch2CH(Thing):
 
         Thing.__init__(
             self,
-            f'SW-2CH-Virtual-{id}',
+            f'SW-2CH-virtual-{id}',
             'Virtual 2CH Switch',
             ['OnOffProperty', 'OnOffSwitch'],
             'A Qube Virtual 2 Channel Switch',
@@ -146,7 +146,7 @@ class VirtualSwitch4CH(Thing):
 
         Thing.__init__(
             self,
-            f'SW-4CH-Virtual-{id}',
+            f'SW-4CH-virtual-{id}',
             'Virtual 4CH Switch',
             ['OnOffProperty', 'OnOffSwitch'],
             'A Qube Virtual 4 Channel Switch',
